@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.WARNING)
 CSVS =['feb2020.csv', 'april2020.csv', 'july2020.csv','june2021.csv']
 
 
-def get_db_session(db_uri="bolt://localhost:7687", auth=("neo4j", "test")):
+def get_db_session(db_uri="bolt://localhost:7687", auth=("neo4j", "password")):
     """"""
     driver = GraphDatabase.driver(uri=db_uri, auth=auth) 
     return driver.session()
