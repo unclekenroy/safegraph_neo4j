@@ -25,7 +25,7 @@ python3 -m pip freeze
 OPTIND=1
 PYSCRIPT=
 NEO_HOME=./neo4j
-NEO_PASS=password
+NEO_PASS=test
 while getopts "s:p:" opt; do
     case "$opt" in
     s)  PYSCRIPT=$OPTARG
